@@ -1,0 +1,45 @@
+{
+  "name": "postcss-css-prefix-namespace",
+  "version": "0.1.0",
+  "description": "A PostCSS plugin that automatically adds prefix namespaces to your CSS selectors.",
+  "keywords": ["postcss", "css", "postcss-plugin", "postcss-css-prefix-namespace"],
+  "scripts": {
+    "test": "jest --coverage && eslint ."
+  },
+  "author": "pinkCar",
+  "license": "MIT",
+  "repository": "https://github.com/PinkCar520/postcss-css-prefix-namespace",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.3.0"
+  },
+  "devDependencies": {
+    "clean-publish": "^3.4.2",
+    "eslint": "^8.0.1",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1",
+    "postcss": "^8.2.6"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": ["eslint:recommended", "plugin:jest/recommended"],
+    "rules": {
+      "jest/expect-expect": "off"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  }
+}
